@@ -1,0 +1,15 @@
+.arch armv8-a
+
+/* Sort rows of matrix my min elements
+ * Gnome sort */
+
+    .data
+    .align  3
+n:  .word   3 /* number of rows */
+m:  .word   5 /* number of columns */
+matrix:
+    .hword   2, 4, 3, 5, 10
+    .hword   8, 7, 15, 2, 0
+    .hword   1, 2, 3, 5, 4
+/* auxiliary array */
+mins:
